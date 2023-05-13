@@ -1,3 +1,9 @@
+
+packages<-c('leaflet','maps','dplyr','shiny','sf','shinydashboard','ggplot2')
+
+install.packages(packages)
+
+
 library(leaflet)
 library(maps)
 library(dplyr)
