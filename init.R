@@ -14,11 +14,5 @@ install.packages("packages/shiny_1.7.1.tar.gz", repos=NULL, type="source")
 
 install.packages("packages/shinydashboard_0.7.2.tar.gz", repos=NULL, type="source")
 
-library(dplyr)
-library(sp)
-library(raster)
-library(leaflet)
-library(maps)
-library(shiny)
-library(shinydashboard)
+
 
