@@ -1,7 +1,7 @@
 my_packages<-c('leaflet','maps','dplyr','shiny', 'sf','shinydashboard','ggplot2')
 
 install_if_missing<-function(p){
-if(p %in% rownames(installed.packages())==FALSE){install.packages(p)}
+if(p %in% rownames(installed.packages())==FALSE){install.packages(p,repos='http://cran.us.r-project.org', dependencies=TRUE)}
 
 }
 
