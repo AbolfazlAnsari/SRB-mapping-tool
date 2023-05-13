@@ -1,9 +1,9 @@
 
-ui <- dashboardPage(
+ui <- shinydashboard::dashboardPage(
   
   dashboardHeader(title = "Susquehanna River Basin Interactive Mapping Tool"),
   
-  dashboardSidebar(
+  shinydashboard::dashboardSidebar(
     
     selectInput("variable", label = "Select:", choices = c("Water", "Flood events", "Organic N", "Organic P",
                                                               
@@ -12,7 +12,7 @@ ui <- dashboardPage(
     
   ),
   
-  dashboardBody(
+  shinydashboard::dashboardBody(
     
               leafletOutput(outputId = "map"),
                 
