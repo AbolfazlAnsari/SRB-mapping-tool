@@ -1,18 +1,37 @@
 #helpers.installPackages("leaflet","maps","dplyr","shiny", "sf","shinydashboard","ggplot2")
 
-install.packages("packages/dplyr_1.0.7.tar.gz", repos=NULL, type="source")
+lib<-"~/packages"
 
-install.packages("packages/sp_1.6-0.tar.gz", repos=NULL, type="source")
+repos<-"https://cran.r-project.org/"
 
-install.packages("packages/raster_1.0.7.tar.gz", repos=NULL, type="source")
+install.packages("dplyr", repos=repos, lib=lib)
 
-install.packages("packages/leaflet_2.1.2.tar.gz", repos=NULL, type="source")
+install.packages("sp", repos=repos, lib=lib)
 
-install.packages("packages/maps_3.4.1.tar.gz", repos=NULL, type="source")
+install.packages("raster", repos=repos, lib=lib)
 
-install.packages("packages/shiny_1.7.1.tar.gz", repos=NULL, type="source")
+install.packages("leaflet", repos=repos, lib=lib)
 
-install.packages("packages/shinydashboard_0.7.2.tar.gz", repos=NULL, type="source")
+install.packages("maps", repos=repos, lib=lib)
+
+install.packages("shiny", repos=repos, lib=lib)
+
+install.packages("shinydashboard", repos=repos, lib=lib)
 
 
+.libPaths("~/packages")
+
+library(dplyr)
+
+library(sp)
+
+#library(raster)
+
+library(leaflet)
+
+library(maps)
+
+library(shiny)
+
+library(shinydashboard)
 
