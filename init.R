@@ -1,25 +1,14 @@
 #helpers.installPackages("leaflet","maps","dplyr","shiny", "sf","shinydashboard","ggplot2")
 
-lib<-"~/packages"
 
-repos<-"https://cran.r-project.org/"
+my_packages = c("leaflet","maps","dplyr","shiny", "sf","shinydashboard","ggplot2")
 
-install.packages("dplyr", repos=repos, lib=lib)
+install_if_missing = function(p) {
+  if (p %in% rownames(installed.packages()) == FALSE) {
+    install.packages(p, clean=TRUE, quiet=TRUE)
+  }
+}
 
-install.packages("sp", repos=repos, lib=lib)
-
-install.packages("raster", repos=repos, lib=lib)
-
-install.packages("leaflet", repos=repos, lib=lib)
-
-install.packages("maps", repos=repos, lib=lib)
-
-install.packages("shiny", repos=repos, lib=lib)
-
-install.packages("shinydashboard", repos=repos, lib=lib)
-
-
-.libPaths("~/packages")
 
 library(dplyr)
 
