@@ -1,6 +1,7 @@
+install.packages("packrat")
 
+packrat::init()
 
-my_packages<-c('leaflet','maps','dplyr','shiny','sf','shinydashboard','ggplot2','sp')
 
 install.packages("sp", repos = "http://cran.us.r-project.org")
 install.packages("leaflet", repos = "http://cran.us.r-project.org")
@@ -12,6 +13,7 @@ install.packages("shinydashboard", repos = "http://cran.us.r-project.org")
 install.packages("ggplot2", repos = "http://cran.us.r-project.org")
 install.packages("ggplot2", repos = "http://cran.us.r-project.org")
 
+packrat::snapshot()
 
 library(sp)
 library(leaflet)
