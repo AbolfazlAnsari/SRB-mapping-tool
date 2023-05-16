@@ -1,15 +1,19 @@
 
 
-my_packages<-c('leaflet','maps','dplyr','shiny','sf','shinydashboard','ggplot2')
+my_packages<-c('leaflet','maps','dplyr','shiny','sf','shinydashboard','ggplot2','sp')
 
-install_if_missing=function(p){
-if(p %in% rownames(installed.packages())==FALSE) {
-install.packages(p)
-}
-}
-invisible(sapply(my_packages, install_if_missing))
+install.packages("sp", repos = "http://cran.us.r-project.org")
+install.packages("leaflet", repos = "http://cran.us.r-project.org")
+install.packages("maps", repos = "http://cran.us.r-project.org")
+install.packages("dplyr", repos = "http://cran.us.r-project.org")
+install.packages("shiny", repos = "http://cran.us.r-project.org")
+install.packages("sf", repos = "http://cran.us.r-project.org")
+install.packages("shinydashboard", repos = "http://cran.us.r-project.org")
+install.packages("ggplot2", repos = "http://cran.us.r-project.org")
+install.packages("ggplot2", repos = "http://cran.us.r-project.org")
 
 
+library(sp)
 library(leaflet)
 library(maps)
 library(dplyr)
