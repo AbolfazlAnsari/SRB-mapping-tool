@@ -6,12 +6,6 @@ library(sf)
 library(shinydashboard)
 library(ggplot2)
 
-library(leafgl)
-
-
-
-library(leaflet.providers)
-
 
 
 
